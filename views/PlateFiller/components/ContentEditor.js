@@ -119,6 +119,9 @@ export default class ContentEditor extends Component {
             margin-top: 10px;
             padding: 15px;
             min-height: 400px;
+            border-color: #9E9E9E;
+            border-width: thin;
+            border-style: dashed;
           }
           .button-container {
             word-wrap: break-word;
