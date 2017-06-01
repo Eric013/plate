@@ -6,6 +6,7 @@ export default class StyleButton extends Component {
   static propTypes = {
     onToggle: PropTypes.func,
     style: PropTypes.string,
+    icon: PropTypes.Component,
     label: PropTypes.string,
     active: PropTypes.bool
   }
@@ -23,6 +24,7 @@ export default class StyleButton extends Component {
 
     return (
       <span className={className} onMouseDown={this.onToggle}>
+        {this.props.icon}
         {this.props.label}
         <style jsx>{`
           .RichEditor-styleButton {
