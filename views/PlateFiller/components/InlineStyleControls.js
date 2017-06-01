@@ -17,9 +17,9 @@ export default function InlineStyleControls(props) {
   var currentStyle = props.editorState.getCurrentInlineStyle()
   return (
     <div className="RichEditor-controls">
-      {INLINE_STYLES.map(type => (
+      {INLINE_STYLES.map((type, index) => (
         <StyleButton
-          key={type.label}
+          key={index}
           active={currentStyle.has(type.style)}
           icon={type.icon}
           onToggle={props.onToggle}

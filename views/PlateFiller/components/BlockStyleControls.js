@@ -35,9 +35,9 @@ export default function BlockStyleControls(props) {
 
   return (
     <div className="RichEditor-controls">
-      {BLOCK_TYPES.map(type => (
+      {BLOCK_TYPES.map((type, index) => (
         <StyleButton
-          key={type.label}
+          key={index}
           active={type.style === blockType}
           label={type.label}
           icon={type.icon}
