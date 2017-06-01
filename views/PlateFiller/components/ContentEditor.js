@@ -133,7 +133,6 @@ export default class ContentEditor extends Component {
           .text-align-left {
             text-align: left;
           }
-
         `}</style>
       </div>
     )

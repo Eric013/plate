@@ -6,7 +6,7 @@ export default class StyleButton extends Component {
   static propTypes = {
     onToggle: PropTypes.func,
     style: PropTypes.string,
-    icon: PropTypes.Component,
+    icon: PropTypes.node,
     label: PropTypes.string,
     active: PropTypes.bool
   }
@@ -30,7 +30,7 @@ export default class StyleButton extends Component {
           .RichEditor-styleButton {
             color: #999;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 16px;
             margin-right: 16px;
             padding: 2px 0;
           }
