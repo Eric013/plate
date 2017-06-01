@@ -103,14 +103,14 @@ export default class ContentEditor extends Component {
             ref={input => {
               this.editor = input
             }}
-            spellCheck={true}
+            spellCheck
           />
         </div>
         <style jsx global>{`
           * {
             font-size: inherit;
           }
-          RichEditor-root {
+          .RichEditor-root {
             background: #fff;
             padding: 15px;
           }
