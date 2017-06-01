@@ -1,6 +1,13 @@
+import AlignCenterIcon from 'react-icons/lib/fa/align-center'
+import AlignLeftIcon from 'react-icons/lib/fa/align-left'
+import AlignRightIcon from 'react-icons/lib/fa/align-right'
+import CodeBlockIcon from 'react-icons/lib/fa/code'
+import OrderedListIcon from 'react-icons/lib/fa/list-ol'
 import PropTypes from 'prop-types'
+import QuoteIcon from 'react-icons/lib/fa/quote-right'
 import React from 'react'
 import StyleButton from './StyleButton'
+import UnorderedListIcon from 'react-icons/lib/fa/list-ul'
 
 const BLOCK_TYPES = [
   { label: 'H1', style: 'header-one' },
@@ -9,13 +16,13 @@ const BLOCK_TYPES = [
   { label: 'H4', style: 'header-four' },
   { label: 'H5', style: 'header-five' },
   { label: 'H6', style: 'header-six' },
-  { label: 'Blockquote', style: 'blockquote' },
-  { label: 'UL', style: 'unordered-list-item' },
-  { label: 'OL', style: 'ordered-list-item' },
-  { label: 'Code Block', style: 'code-block' },
-  { label: 'Right', style: 'text-align-right' },
-  { label: 'Left', style: 'text-align-left' },
-  { label: 'Center', style: 'text-align-center' }
+  { icon: <QuoteIcon />, style: 'blockquote' },
+  { icon: <UnorderedListIcon />, style: 'unordered-list-item' },
+  { icon: <OrderedListIcon />, style: 'ordered-list-item' },
+  { icon: <CodeBlockIcon />, style: 'code-block' },
+  { icon: <AlignRightIcon />, style: 'text-align-right' },
+  { icon: <AlignLeftIcon />, style: 'text-align-left' },
+  { icon: <AlignCenterIcon />, style: 'text-align-center' }
 ]
 
 export default function BlockStyleControls(props) {
@@ -33,6 +40,7 @@ export default function BlockStyleControls(props) {
           key={type.label}
           active={type.style === blockType}
           label={type.label}
+          icon={type.icon}
           onToggle={props.onToggle}
           style={type.style}
         />
