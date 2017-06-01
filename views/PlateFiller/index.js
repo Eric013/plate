@@ -14,7 +14,7 @@ function PlateFiller({ plateId, savePlateContent, plate, loading }) {
   }
 
   return (
-    <div className="container">
+    <div className="container bottom-margin">
       <div className="row">
         <div className="col-sm-12 col-md-12 col-lg-12 full-width">
           <PageHeader headerText={plate.name} />
@@ -27,7 +27,7 @@ function PlateFiller({ plateId, savePlateContent, plate, loading }) {
       </div>
       <style jsx>{`
         .bottom-margin {
-          margin-bottom: 50px;
+          padding-bottom: 20px;
         }
         .full-width {
           width: 100%;
