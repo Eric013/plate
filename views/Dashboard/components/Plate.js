@@ -16,6 +16,7 @@ import SpannerOutline from 'react-icons/lib/ti/spanner-outline'
 class Plate extends Component {
   static propTypes = {
     name: PropTypes.string,
+    dateCreated: PropTypes.string,
     description: PropTypes.string,
     plateId: PropTypes.string,
     removePlate: PropTypes.func,
@@ -82,6 +83,7 @@ class Plate extends Component {
   render() {
     const {
       user,
+      dateCreated,
       description,
       plateId,
       status,
@@ -97,7 +99,10 @@ class Plate extends Component {
         <Card
           headerText={name}
           avatar={cardImage}
-          subheader={'Status: ' + status}
+          subheader={[
+            <div key={1}>Status: {status}</div>,
+            <div key={2}>Date Created: {dateCreated}</div>
+          ]}
           footerItems={[
             <button
               type="button"
