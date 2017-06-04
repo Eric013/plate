@@ -24,7 +24,7 @@ const addPlateResolvers = {
         status: 'New',
         content: initialContent,
         createdBy: createdBy,
-        dateCreated: moment().format('dddd, MMMM Do YYYY, h:mm:ss a'),
+        dateCreated: moment().format('MMMM Do YYYY'),
         dateDue: moment().format('dddd, MMMM Do YYYY, h:mm:ss a')
       }
 
