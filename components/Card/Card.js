@@ -75,7 +75,7 @@ Card.propTypes = {
   style: PropTypes.object,
   headerText: PropTypes.string,
   avatar: PropTypes.string,
-  subheader: PropTypes.string,
+  subheader: PropTypes.array,
   actionIcon: PropTypes.node,
   footerItems: PropTypes.array
 }
