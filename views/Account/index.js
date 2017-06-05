@@ -94,13 +94,6 @@ class Account extends Component {
             />}
         </div>
         <style jsx>{`
-          @media only screen
-          and (min-device-width : 320px)
-          and (max-device-width : 1030px) {
-            .nav-link {
-              font-size: 40%;
-            }
-          }
           .divider {
             margin-top: 40px;
             margin-bottom: 40px;
@@ -169,6 +162,12 @@ class Account extends Component {
           .nav-link a:focus::after {
             top: 0%;
             opacity: 1;
+          }
+          @media only screen
+          and (min-device-width : 320px) {
+            .nav-link {
+              font-size: 40%;
+            }
           }
         `}</style>
       </div>
