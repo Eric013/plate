@@ -38,15 +38,14 @@ export default function Modal({ open, closeModal, children }) {
                 }}
                 duration={200}
               >
-                {data => (
+                {data =>
                   <div
                     style={{
                       transform: `scale(${data.scale})`
                     }}
                   >
                     {children}
-                  </div>
-                )}
+                  </div>}
               </Animate>
             </div>
           </div>
@@ -61,13 +60,6 @@ export default function Modal({ open, closeModal, children }) {
             height: 100vh;
             width: 100%;
             background-color: rgba(0,0,0,0.88);
-          }
-          @media only screen
-          and (min-device-width : 320px)
-          and (max-device-width : 1030px) {
-            .modal {
-              height: 100%;
-            }
           }
         `}</style>
       </div>

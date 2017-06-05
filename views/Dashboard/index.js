@@ -35,7 +35,7 @@ class Dashboard extends Component {
             ? <div className="col-sm-12 col-md-6 col-lg-4 col-lg-offset-4 col-md-offset-3">
                 <NoPlatesFound user={this.props.user} />
               </div>
-            : this.props.plates.map((plate, index) => (
+            : this.props.plates.map((plate, index) =>
                 <Animate
                   key={index}
                   easing="easeQuadIn"
@@ -47,7 +47,7 @@ class Dashboard extends Component {
                   }}
                   duration={200}
                 >
-                  {data => (
+                  {data =>
                     <div
                       style={{
                         transform: `scale(${data.scale})`
@@ -57,16 +57,16 @@ class Dashboard extends Component {
                       <Plate
                         plateId={plate.id}
                         name={plate.name}
+                        dateCreated={plate.dateCreated}
                         description={plate.description}
                         cardImage={plate.thumbnail}
                         status={plate.status}
                         content={plate.content}
                         user={this.props.user}
                       />
-                    </div>
-                  )}
+                    </div>}
                 </Animate>
-              ))}
+              )}
         </div>
         <div className="row">
           <div className="col-sm-12 add-button">
