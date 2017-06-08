@@ -49,7 +49,7 @@
     "eslint-config-prettier": "^2.1.1",
     "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.0.1",
-    "prettier": "^1.4.2",
+    "prettier": "^1.4.4",
     "prettier-eslint": "^6.3.0",
     "sw-precache-webpack-plugin": "^0.11.3"
   },
