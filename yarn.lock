@@ -1822,9 +1822,9 @@ eslint-config-prettier@^2.1.1:
   dependencies:
     get-stdin "^5.0.1"
 
-eslint-plugin-prettier@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.1.1.tgz#2fb7e2ab961f2b61d2c8cf91bc17716ca8c53868"
+eslint-plugin-prettier@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.1.2.tgz#4b90f4ee7f92bfbe2e926017e1ca40eb628965ea"
   dependencies:
     fast-diff "^1.1.1"
     jest-docblock "^20.0.1"
@@ -2382,17 +2382,17 @@ graphql-anywhere@^3.0.0, graphql-anywhere@^3.0.1:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/graphql-anywhere/-/graphql-anywhere-3.1.0.tgz#3ea0d8e8646b5cee68035016a9a7557c15c21e96"
 
-graphql-server-core@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/graphql-server-core/-/graphql-server-core-0.8.3.tgz#08a35f86b4b985b6d42c6a972c421fbeca83a3df"
+graphql-server-core@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/graphql-server-core/-/graphql-server-core-0.8.4.tgz#2a63b83efe513bec256111bfbd8a2fff131c5774"
   optionalDependencies:
-    "@types/graphql" "^0.9.1"
+    "@types/graphql" "^0.9.0"
 
-graphql-server-express@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/graphql-server-express/-/graphql-server-express-0.8.3.tgz#ba8563b2c0abd39c105e26cad8b77f2c47a7362f"
+graphql-server-express@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/graphql-server-express/-/graphql-server-express-0.8.4.tgz#7af25c01627a6c9b04fe504becf68406cdd430bf"
   dependencies:
-    graphql-server-core "^0.8.3"
+    graphql-server-core "^0.8.4"
     graphql-server-module-graphiql "^0.8.2"
   optionalDependencies:
     "@types/express" "^4.0.35"
@@ -3977,16 +3977,7 @@ react-deep-force-update@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.0.1.tgz#4f7f6c12c3e7de42f345992a3c518236fa1ecad3"
 
-"react-dom@0.14.x || 15.* || ^15.0.0 || ^16.0.0-alpha":
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
-  dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "~15.5.7"
-
-react-dom@^15.6.0:
+"react-dom@0.14.x || 15.* || ^15.0.0 || ^16.0.0-alpha", react-dom@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.0.tgz#8bc23cb0c80e706355b76ca9f8ce47cf7bdfb6d1"
   dependencies:
