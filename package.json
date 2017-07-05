@@ -29,7 +29,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mongodb": "^2.2.29",
-    "next": "^2.4.6",
+    "next": "^3.0.1-beta.8",
     "nodemailer": "^4.0.1",
     "nprogress": "^0.2.0",
     "prop-types": "^15.5.10",
@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
     "prettier": "^1.5.2",
-    "prettier-eslint": "^6.4.1",
+    "prettier-eslint": "^6.4.2",
     "sw-precache-webpack-plugin": "^0.11.3"
   },
   "now": {
